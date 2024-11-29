@@ -11,7 +11,7 @@ if (-not $isAdmin) {
         Write-Host "`n---ERROR!!---" -ForegroundColor White -BackgroundColor Red;
         Write-Host -NoNewline "";
         Write-Host "You need admin rights to run this script.`n"
-        return
+        return $null
     }
 }
 
