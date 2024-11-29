@@ -15,9 +15,9 @@ if (-not $isAdmin) {
 }
 
 Clear-Host;
-Write-Host "(1/4) Chkdsk" -BackgroundColor Green; chkdsk /scan;
-Write-Host "`n(2/4) SFC - 1st run" -BackgroundColor Green; sfc /scannow;
-Write-Host "`n(3/4) DISM" -BackgroundColor DarkGreen; DISM /Online /Cleanup-Image /RestoreHealth;
-Write-Host "`n(4/4) SFC - 2nd run" -BackgroundColor Green; sfc /scannow;
+Write-Host "(1/4) Chkdsk" -BackgroundColor Green;
+Write-Host "`n(2/4) SFC - 1st run" -BackgroundColor Green;
+Write-Host "`n(3/4) DISM" -BackgroundColor DarkGreen;
+Write-Host "`n(4/4) SFC - 2nd run" -BackgroundColor Green;
 Write-Host "`n`n"
 Pause
