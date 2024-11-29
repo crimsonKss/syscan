@@ -5,7 +5,7 @@ Based on CTT's [winutil](https://github.com/ChrisTitusTech/winutil) [DISM script
 ## Usage
 Paste this command on Powershell:
 ```powershell
-irm raphap3.net/scan
+irm "https://raphap3.net/scan" | iex
 ```
 
 ## License
