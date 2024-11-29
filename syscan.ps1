@@ -9,7 +9,7 @@ if (-not $isAdmin) {
     catch {
         Write-Host "`n---ERROR!!---" -ForegroundColor White -BackgroundColor Red;
         Write-Host "You need admin rights to run this script.`n"
-        exit 1
+        return 1
     }
 }
 
