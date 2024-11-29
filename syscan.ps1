@@ -4,13 +4,12 @@ if (-not $isAdmin) {
     try {
         $command = $MyInvocation.MyCommand.Definition
         Start-Process powershell -Verb RunAs -Wait -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command $command"
-        break
+        exit
     }
     catch {
-        Clear-Host;
-        Write-Host "---ERROR!!---" -ForegroundColor White -BackgroundColor Red;
+        Write-Host "`n---ERROR!!---" -ForegroundColor White -BackgroundColor Red;
         Write-Host "You need admin rights to run this script.`n"
-        break 1
+        exit 1
     }
 }
 
