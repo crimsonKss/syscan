@@ -24,7 +24,8 @@ jobs:
         stale-issue-message: 'This issue was detected as inactive for 1 month and will be closed in the next 3 days'
         stale-pr-message: 'This PR was detected as inactive for 1 month and will be closed in the next 3 days'
         stale-issue-label: 'inactive-issue'
-        close-issue-reason: 'wontfix'
+        close-issue-reason: 'not_planned'
+        close-issue-label: 'wontfix'
         stale-pr-label: 'inactive-pr'
         close-pr-label: 'unverified'
         days-before-stale: 30
